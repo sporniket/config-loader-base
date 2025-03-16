@@ -7,8 +7,8 @@ import * as config from '../src/config-loader-base.js';
 ---
 Copyright (C) 2025 David SPORN
 ---
-This is part of **build-cmake-for-pulsar**.
-Generate and build cmake projects from within Pulsar.
+This is part of **config-loader-base-by-sporniket**.
+A simple method template to load a set of configuration values identified by a named key.
 ****************************************/
 
 test('loadConfigurationMap should map keys and load them.', () => {
