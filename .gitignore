@@ -1,3 +1,6 @@
+# Specifics
+dist-cjs/*
+
 # Logs
 logs
 *.log
