@@ -1,6 +1,6 @@
 {
     "name": "config-loader-base-by-sporniket",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A simple method template to load a set of configuration values identified by a named key",
     "main": "dist-cjs/config-loader-base.js",
     "module": "src/config-loader-base.js",
