@@ -18,6 +18,10 @@ One would provide to the template method :
 * A lambda that would convert a property name into a key name, to be used to load the property value ;
 * A lambda that use the property key to load the property value.
 
+### What's new in v0.0.5
+
+* Proofread README.
+
 ### What's new in v0.0.4
 
 * Proofread README.
@@ -57,7 +61,7 @@ One would provide to the template method :
 ### npm
 
 ```
-npm install config-loader-base
+npm install config-loader-base-by-sporniket
 ```
 
 ### Directions and sample code
