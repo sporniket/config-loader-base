@@ -18,6 +18,10 @@ One would provide to the template method :
 * A lambda that would convert a property name into a key name, to be used to load the property value ;
 * A lambda that use the property key to load the property value.
 
+### What's new in v0.1.0
+
+* Version 0.0.5 is good enough and is promoted to version 0.1.0
+
 ### What's new in v0.0.5
 
 * Proofread README.
