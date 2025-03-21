@@ -18,6 +18,10 @@ One would provide to the template method :
 * A lambda that would convert a property name into a key name, to be used to load the property value ;
 * A lambda that use the property key to load the property value.
 
+### What's new in v0.0.4
+
+* Proofread README.
+
 ### What's new in v0.0.3
 
 * Add a README ;
@@ -52,11 +56,9 @@ One would provide to the template method :
 
 ### npm
 
-To get the latest available code, one must clone the git repository, build and install to the maven local repository.
-
-	git clone https://github.com/sporniket/config-loader-base.git
-	cd core
-	mvn install
+```
+npm install config-loader-base
+```
 
 ### Directions and sample code
 
