@@ -11,12 +11,14 @@
         }
     },
     "scripts": {
-        "format-package-json": "prettier -w package.json",
-        "format-src": "eslint --fix src/*.js",
-        "format-src-tests": "eslint --fix src-tests/*.?js",
-        "format": "npm run format-package-json && npm run format-src && npm run format-src-tests",
-        "build-cjs": "babel --plugins @babel/plugin-transform-modules-commonjs src --out-dir dist-cjs",
-        "rebuild-cjs":"rm -f dist-cjs/*.js && npm run build-cjs",
+        "_format-package-json": "prettier -w package.json",
+        "_format-src": "eslint --fix src/*.js",
+        "_format-src-tests": "eslint --fix src-tests/*.?js",
+        "format": "npm run _format-package-json && npm run _format-src && npm run _format-src-tests",
+        "_build-cjs-copy-resources": "cp src-cjs/* dist-cjs",
+        "_build-cjs-transpile": "babel --plugins @babel/plugin-transform-modules-commonjs src --out-dir dist-cjs",
+        "build-cjs": "npm run _build-cjs-copy-resources && npm run _build-cjs-transpile",
+        "rebuild-cjs": "rm -f dist-cjs/* && npm run build-cjs",
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config=.jest.config.cjs"
     },
     "repository": {
